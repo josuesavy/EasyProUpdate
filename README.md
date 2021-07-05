@@ -1,4 +1,4 @@
-**Description** (21/02/2015 - 07:23:43.587-08:00)
+**Description** _(21/02/2015 - 07:23:43.587 https://easyproupdate.codeplex.com/)_
 
 **Easy Pro Update** est un système de mise à jour, qui a pour but de mettre à jour vos application sur plusieurs plateformes (C#, VB.NET..) mais il peut être utilisé sur plusieurs type d'application (WindowsForm, WPF, Console..). Un développeur pourra insérer **Easy Pro Update** facilement et rapidement sur ses applications qu'il veut mettre à jour régulièrement. En effet il sera facile pour lui de changer de version, de mettre les notes de versions afin d'informer l'utilisateur du contenue de la mise à jour. Côté utilisateur, il sera facilement compréhensible, rapide d'utilisation et informé à tout moment.
 
