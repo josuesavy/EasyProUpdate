@@ -63,6 +63,7 @@
             this.MinimizeBox = false;
             this.Name = "DownloadForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DownloadForm_FormClosing);
             this.Load += new System.EventHandler(this.DownloadForm_Load);
             this.ResumeLayout(false);
 

@@ -11,6 +11,7 @@ using System.Net.Cache;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.WindowsAPICodePack.Taskbar;
 
 namespace EasyProUpdate
 {
@@ -54,6 +55,7 @@ namespace EasyProUpdate
             this.lblInfos.Text = string.Format("{0} /{1} ({2}Ko/s)", FormatBytes(e.BytesReceived, 1, true), FormatBytes(e.TotalBytesToReceive, 1, true), (e.BytesReceived / 1024d / sw.Elapsed.TotalSeconds).ToString("0.00"));
             this.Text = string.Format("[{0}%] {1}", e.ProgressPercentage, e.UserState);
             pbDownload.Value = e.ProgressPercentage;
+            TaskbarManager.Instance.SetProgressValue(e.ProgressPercentage, 100);
         }
 
         /// <summary>
@@ -113,6 +115,11 @@ namespace EasyProUpdate
                 try
                 {
                     var processStartInfo = new ProcessStartInfo { FileName = _tempPath, UseShellExecute = true };
+                    if (Path.GetExtension(_tempPath) != ".msi")
+                    {
+                        processStartInfo.WorkingDirectory = Environment.CurrentDirectory;
+                        processStartInfo.Verb = "runas";
+                    }
                     Process.Start(processStartInfo);
                     if (EPUpdate.IsWinFormsApplication)
                     {
@@ -180,6 +187,7 @@ namespace EasyProUpdate
         private void DownloadForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             _webClient.CancelAsync(); //Annule le téléchargement
+            TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.Paused);
         }
     }
 }
