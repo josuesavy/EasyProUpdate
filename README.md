@@ -6,11 +6,11 @@
 
 Une fenêtre pour avertir l'utilisateur qu'une mise à jour est disponible avec son contenu :
 
-![](Home_Easy Pro Update.png)
+![Home_Easy Pro Update](https://user-images.githubusercontent.com/71042742/124523315-e21a4d80-ddf6-11eb-86dc-429f06fbe9b5.png)
 
 Et une fenêtre pour informer l'utilisateur de la progression du téléchargement de la mise à jour : 
 
-![](Home_Easy Pro Update - Download.png)
+![Home_Easy Pro Update - Download](https://user-images.githubusercontent.com/71042742/124523329-ee9ea600-ddf6-11eb-8122-7090a1782133.png)
 
 Ainsi, **Easy Pro Update** mettra à jour vos applications de n'importe quels autres langages, ou autres plateformes de fenêtres et prendra en compte le choix de l'utilisateur ("**Télécharger maintenant**" ou "**Télécharger plus tard**"). 
 
