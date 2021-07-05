@@ -28,18 +28,17 @@ Voici le contenu de Fichier-Mise-A-Jour.xml :
 
 Pour un projet C# :
 
-![](Documentation_C#.png)
+![Documentation_C#](https://user-images.githubusercontent.com/71042742/124523557-dbd8a100-ddf7-11eb-82a9-147a4099f63b.png)
 
-
-![](Documentation_Add-reference C#.png)
+![Documentation_Add-reference C#](https://user-images.githubusercontent.com/71042742/124523572-eb57ea00-ddf7-11eb-95d3-92ecf6b49503.png)
 
 
 Pour un projet VB.NET :
 
-![](Documentation_VB.NET.png)
+![Documentation_VB NET](https://user-images.githubusercontent.com/71042742/124523578-f14dcb00-ddf7-11eb-9c03-3e500927e07a.png)
 
 
-![](Documentation_Add-reference VB.NET.png)
+![Documentation_Add-reference VB NET](https://user-images.githubusercontent.com/71042742/124523585-f6ab1580-ddf7-11eb-9a59-8386e1026086.png)
 
 
 #### 2. Allez dans le code de la fenêtre principale de votre application, et inscrivez les écritures ci-dessous : 
