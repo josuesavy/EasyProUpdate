@@ -24,10 +24,6 @@ namespace EasyProUpdate
 
         internal static String DownloadURL;
 
-        internal static String RegistryLocation;
-
-        internal static String AppTitle;
-
         internal static Version UpdateVersion;
 
         internal static Version InstalledVersion;
@@ -46,7 +42,7 @@ namespace EasyProUpdate
 
         /// <summary>
         /// Définit la culture actuelle de la fenêtre de notification de mise à jour automatique. Définissez cette valeur si vos supports d'application
-        /// Fonctionnelle pour changer le languge de la demande.
+        /// Fonctionnelle pour changer le language de la demande.
         /// </summary>
         public static CultureInfo CurrentCulture;
 
@@ -70,7 +66,7 @@ namespace EasyProUpdate
         }
 
         /// <summary>
-        /// Commence à vérifier pour la nouvelle version de l'application et l dialogue d'affichage pour l'utilisateur si une mise à jour est disponible.
+        /// Commence à vérifier pour la nouvelle version de l'application et le dialogue d'affichage pour l'utilisateur si une mise à jour est disponible.
         /// </summary>
         /// <param name="appCast">URL du fichier XML qui contient des informations sur la dernière version de l'application.</param>
         public static void Start(String appCast)
@@ -89,21 +85,11 @@ namespace EasyProUpdate
         private static void BackgroundWorkerDoWork(object sender, DoWorkEventArgs e)
         {
             Assembly mainAssembly = Assembly.GetEntryAssembly();
-            var companyAttribute =
-                (AssemblyCompanyAttribute)GetAttribute(mainAssembly, typeof(AssemblyCompanyAttribute));
-            var titleAttribute = (AssemblyTitleAttribute)GetAttribute(mainAssembly, typeof(AssemblyTitleAttribute));
-            AppTitle = titleAttribute != null ? titleAttribute.Title : mainAssembly.GetName().Name;
-            string appCompany = companyAttribute != null ? companyAttribute.Company : "";
-
-            RegistryLocation = !string.IsNullOrEmpty(appCompany)
-                ? string.Format(@"Software\{0}\{1}\AutoUpdater", appCompany, AppTitle)
-                : string.Format(@"Software\{0}\AutoUpdater", AppTitle);
 
             InstalledVersion = mainAssembly.GetName().Version;
 
             WebRequest webRequest = WebRequest.Create(AppCastURL);
             webRequest.CachePolicy = new HttpRequestCachePolicy(HttpRequestCacheLevel.NoCacheNoStore);
-
             WebResponse webResponse;
 
             try

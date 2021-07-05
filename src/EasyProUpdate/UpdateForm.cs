@@ -13,6 +13,10 @@ namespace EasyProUpdate
 {
     public partial class UpdateForm : Form
     {
+        /// <summary>
+        /// Lors du chargement de la fenêtre de Mise à jour
+        /// </summary>
+        /// <param name="remindLater"></param>
         public UpdateForm(bool remindLater = false)
         {
             if (!remindLater)
@@ -31,6 +35,11 @@ namespace EasyProUpdate
             set { base.Text = value; }
         }
 
+        /// <summary>
+        /// Evènement du bouton "Télécharger maintenant"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btUpdate_Click(object sender, EventArgs e)
         {
             if (EPUpdate.OpenDownloadPage)
@@ -44,10 +53,26 @@ namespace EasyProUpdate
             }
         }
 
+        /// <summary>
+        /// Evènement du bouton "Télécharger plus tard"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btLater_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.No;
             this.Close();
+        }
+
+        private void rtbChangeLog_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.C)
+                e.SuppressKeyPress = true;
+        }
+
+        private void rtbChangeLog_LinkClicked(object sender, LinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.LinkText);
         }
     }
 }

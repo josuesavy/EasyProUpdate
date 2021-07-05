@@ -32,6 +32,11 @@ namespace EasyProUpdate
             _downloadURL = downloadURL;
         }
 
+        /// <summary>
+        /// Lors du chargement de la fenêtre de téléchargement
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DownloadForm_Load(object sender, EventArgs e)
         {
             _webClient = new WebClient();
@@ -50,10 +55,23 @@ namespace EasyProUpdate
             sw.Start();
         }
 
+        /// <summary>
+        /// Lors du changement de progression du téléchargement
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnDownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
+            double TimeRemaining = (e.TotalBytesToReceive - e.BytesReceived) * sw.Elapsed.TotalSeconds / e.BytesReceived;
+            if (TimeRemaining < 60)
+            {
+                this.Text = string.Format("[{0}%] - Il reste {1} seconde(s)", e.ProgressPercentage, TimeRemaining.ToString("0"));
+            }
+            if (TimeRemaining > 60)
+            {
+                this.Text = string.Format("[{0}%] - Il reste {1} minute(s)", e.ProgressPercentage, TimeRemaining.ToString("0"));
+            }
             this.lblInfos.Text = string.Format("{0} /{1} ({2}Ko/s)", FormatBytes(e.BytesReceived, 1, true), FormatBytes(e.TotalBytesToReceive, 1, true), (e.BytesReceived / 1024d / sw.Elapsed.TotalSeconds).ToString("0.00"));
-            this.Text = string.Format("[{0}%] {1}", e.ProgressPercentage, e.UserState);
             pbDownload.Value = e.ProgressPercentage;
             TaskbarManager.Instance.SetProgressValue(e.ProgressPercentage, 100);
         }
@@ -108,6 +126,11 @@ namespace EasyProUpdate
             return String.Format(formatString, newBytes);
         }
 
+        /// <summary>
+        /// Quand le téléchargement est terminé
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnDownloadComplete(object sender, AsyncCompletedEventArgs e)
         {
             if (!e.Cancelled)
@@ -184,6 +207,11 @@ namespace EasyProUpdate
             return fileName;
         }
 
+        /// <summary>
+        /// Lors de la fermeture de la fenêtre de téléchargement
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DownloadForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             _webClient.CancelAsync(); //Annule le téléchargement

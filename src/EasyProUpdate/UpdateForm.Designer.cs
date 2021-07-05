@@ -107,7 +107,10 @@
             this.rtbChangeLog.ReadOnly = true;
             this.rtbChangeLog.Size = new System.Drawing.Size(348, 83);
             this.rtbChangeLog.TabIndex = 19;
+            this.rtbChangeLog.TabStop = false;
             this.rtbChangeLog.Text = "";
+            this.rtbChangeLog.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.rtbChangeLog_LinkClicked);
+            this.rtbChangeLog.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rtbChangeLog_KeyDown);
             // 
             // lblTitle
             // 
@@ -121,6 +124,7 @@
             // 
             // UpdateForm
             // 
+            this.AcceptButton = this.btUpdate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
