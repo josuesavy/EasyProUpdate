@@ -58,7 +58,7 @@ namespace EasyProUpdate
         public static event CheckForUpdateEventHandler CheckForUpdateEvent;
 
         /// <summary>
-        /// Commence à vérifier pour la nouvelle version de l'application et l dialogue d'affichage pour l'utilisateur si une mise à jour est disponible.
+        /// Commence à vérifier pour la nouvelle version de l'application et le dialogue d'affichage pour l'utilisateur si une mise à jour est disponible.
         /// </summary>
         public static void Start()
         {
@@ -99,9 +99,7 @@ namespace EasyProUpdate
             catch (Exception)
             {
                 if (CheckForUpdateEvent != null)
-                {
                     CheckForUpdateEvent(null);
-                }
                 return;
             }
 
@@ -110,15 +108,11 @@ namespace EasyProUpdate
             var receivedAppCastDocument = new XmlDocument();
 
             if (appCastStream != null)
-            {
                 receivedAppCastDocument.Load(appCastStream);
-            }
             else
             {
                 if (CheckForUpdateEvent != null)
-                {
                     CheckForUpdateEvent(null);
-                }
                 return;
             }
 
@@ -155,9 +149,7 @@ namespace EasyProUpdate
                         var downloadURL64 = appCastUrl64 != null ? appCastUrl64.InnerText : "";
 
                         if (!string.IsNullOrEmpty(downloadURL64))
-                        {
                             DownloadURL = downloadURL64;
-                        }
                     }
                 }
 
@@ -186,9 +178,7 @@ namespace EasyProUpdate
             }
 
             if (CheckForUpdateEvent != null)
-            {
                 CheckForUpdateEvent(args);
-            }
         }
 
         /// <summary>
@@ -197,7 +187,6 @@ namespace EasyProUpdate
         private static void ShowUI()
         {
             var updateForm = new UpdateForm();
-
             updateForm.ShowDialog();
         }
 
@@ -205,9 +194,7 @@ namespace EasyProUpdate
         {
             object[] attributes = assembly.GetCustomAttributes(attributeType, false);
             if (attributes.Length == 0)
-            {
                 return null;
-            }
             return (Attribute)attributes[0];
         }
 

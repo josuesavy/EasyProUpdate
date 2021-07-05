@@ -6,3 +6,120 @@ C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.0\EasyProUpdate\ob
 C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.0\EasyProUpdate\obj\Debug\EasyProUpdate.csproj.GenerateResource.Cache
 C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.0\EasyProUpdate\obj\Debug\EasyProUpdate.dll
 C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.0\EasyProUpdate\obj\Debug\EasyProUpdate.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Debug\EasyProUpdate.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Debug\EasyProUpdate.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Debug\Microsoft.WindowsAPICodePack.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\obj\Debug\EasyProUpdate.DownloadForm.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\obj\Debug\EasyProUpdate.Properties.Resources.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\obj\Debug\EasyProUpdate.UpdateForm.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\obj\Debug\EasyProUpdate.csproj.GenerateResource.Cache
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\obj\Debug\EasyProUpdate.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\obj\Debug\EasyProUpdate.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Release\EasyProUpdate.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Release\EasyProUpdate.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.2\EasyProUpdate\obj\Debug\EasyProUpdate.csprojResolveAssemblyReference.cache
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\bin\Release\EasyProUpdate.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\bin\Release\EasyProUpdate.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\obj\Debug\EasyProUpdate.DownloadForm.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\obj\Debug\EasyProUpdate.Properties.Resources.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\obj\Debug\EasyProUpdate.UpdateForm.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\obj\Debug\EasyProUpdate.csproj.GenerateResource.Cache
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\obj\Debug\EasyProUpdate.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\obj\Debug\EasyProUpdate.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.0.3\EasyProUpdate\obj\Debug\EasyProUpdate.csprojResolveAssemblyReference.cache
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\bin\Release\EasyProUpdate.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\bin\Release\EasyProUpdate.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\obj\Debug\EasyProUpdate.csprojResolveAssemblyReference.cache
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\obj\Debug\EasyProUpdate.DownloadForm.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\obj\Debug\EasyProUpdate.Properties.Resources.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\obj\Debug\EasyProUpdate.UpdateForm.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\obj\Debug\EasyProUpdate.csproj.GenerateResource.Cache
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\obj\Debug\EasyProUpdate.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.4.2\EasyProUpdate\obj\Debug\EasyProUpdate.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\bin\Release\EasyProUpdate.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\bin\Release\EasyProUpdate.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.csprojResolveAssemblyReference.cache
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.DownloadForm.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.Properties.Resources.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.UpdateForm.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.csproj.GenerateResource.Cache
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\EasyProUpdate.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\EasyProUpdate.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.DownloadForm.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.Properties.Resources.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.UpdateForm.resources
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.csproj.GenerateResource.Cache
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.dll
+C:\Users\SAVY\Documents\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.pdb
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\EasyProUpdate.dll
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\EasyProUpdate.pdb
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.dll
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.pdb
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.xml
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.pdb
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.Shell.xml
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.DownloadForm.resources
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.Properties.Resources.resources
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.UpdateForm.resources
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.csproj.GenerateResource.Cache
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.dll
+F:\Privé\Dossier Programmation\Visual Studio 2011\EasyProUpdate v1.2.2\EasyProUpdate\obj\Debug\EasyProUpdate.pdb

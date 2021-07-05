@@ -26,6 +26,7 @@ namespace EasyProUpdate
                 Text = EPUpdate.DialogTitle;
                 lblVersions.Text = String.Format("Version courante : {0}\nMise à jour version : {1}", EPUpdate.InstalledVersion, EPUpdate.UpdateVersion);
                 rtbChangeLog.Text = EPUpdate.ChangeLog;
+                int countClick = 1;
             }
         }
 
@@ -48,9 +49,7 @@ namespace EasyProUpdate
                 Process.Start(processStartInfo);
             }
             else
-            {
                 EPUpdate.DownloadUpdate();
-            }
         }
 
         /// <summary>

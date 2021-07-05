@@ -12,17 +12,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.WindowsAPICodePack.Taskbar;
+using System.IO.Compression;
 
 namespace EasyProUpdate
 {
     public partial class DownloadForm : Form
     {
         private readonly string _downloadURL;
-
         private string _tempPath;
-
         private WebClient _webClient;
-
         Stopwatch sw = new Stopwatch();
 
         public DownloadForm(string downloadURL)
@@ -62,16 +60,56 @@ namespace EasyProUpdate
         /// <param name="e"></param>
         private void OnDownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
-            double TimeRemaining = (e.TotalBytesToReceive - e.BytesReceived) * sw.Elapsed.TotalSeconds / e.BytesReceived;
-            if (TimeRemaining < 60)
+            int intHours = 0;
+            int intMinutes = 0;
+            int intSeconds = 0;
+            int EstimatedTime = 0;
+            int ByteProcessTime = 0;
+
+            ByteProcessTime = Convert.ToInt32(e.BytesReceived / sw.Elapsed.TotalSeconds);
+            EstimatedTime = Convert.ToInt32((e.TotalBytesToReceive - e.BytesReceived) / ByteProcessTime);
+
+            if (EstimatedTime > 60)
             {
-                this.Text = string.Format("[{0}%] - Il reste {1} seconde(s)", e.ProgressPercentage, TimeRemaining.ToString("0"));
+                intMinutes = Convert.ToInt32(EstimatedTime / 60);
+                intSeconds = Convert.ToInt32(EstimatedTime % 60);
+
+                if (intMinutes > 60)
+                {
+                    intHours = Convert.ToInt32(intMinutes / 60);
+                    intMinutes = Convert.ToInt32(intMinutes % 60);
+                }
             }
-            if (TimeRemaining > 60)
-            {
-                this.Text = string.Format("[{0}%] - Il reste {1} minute(s)", e.ProgressPercentage, TimeRemaining.ToString("0"));
-            }
-            this.lblInfos.Text = string.Format("{0} /{1} ({2}Ko/s)", FormatBytes(e.BytesReceived, 1, true), FormatBytes(e.TotalBytesToReceive, 1, true), (e.BytesReceived / 1024d / sw.Elapsed.TotalSeconds).ToString("0.00"));
+            else
+                intSeconds = EstimatedTime;
+
+            string TimeRemaining = string.Format("Il reste {0:#0} heure(s) {1:#0} min(s)", intHours, intMinutes);
+
+            if (intHours == 0)
+                TimeRemaining = string.Format("Il reste {0:#0} min(s)", intMinutes);
+
+            if (intMinutes == 0)
+                TimeRemaining = string.Format("Il reste {0:#0} heure(s)", intHours);
+
+            if (intSeconds == 0)
+                TimeRemaining = string.Format("Il reste {0:#0} heure(s) {1:#0} min(s)", intHours, intMinutes);
+
+            if (intHours == 0 & intMinutes == 0)
+                TimeRemaining = string.Format("Il reste {0:#0} sec(s)", intSeconds);
+
+            if (intHours == 0 & intSeconds == 0)
+                TimeRemaining = string.Format("Il reste {0:#0} min(s)", intMinutes);
+
+            if (intMinutes == 0 & intSeconds == 0)
+                TimeRemaining = string.Format("Il reste {0:#0} heure(s)", intHours);
+
+            if (intHours == 0 & intMinutes == 0 & intSeconds == 0)
+                TimeRemaining = "Téléchargement terminé";
+
+            this.Text = string.Format("[{0}%] - {1}", e.ProgressPercentage, TimeRemaining);
+            string speedDownloading = (e.BytesReceived / 1024d / sw.Elapsed.TotalSeconds).ToString("0.00");
+            lblInfos.Text = string.Format("{0}/{1} ({2}Ko/s)", FormatBytes(e.BytesReceived, 1, true), FormatBytes(e.TotalBytesToReceive, 1, true), speedDownloading);
+
             pbDownload.Value = e.ProgressPercentage;
             TaskbarManager.Instance.SetProgressValue(e.ProgressPercentage, 100);
         }
@@ -89,7 +127,7 @@ namespace EasyProUpdate
             string formatString = "{0";
             string byteType = "o";
 
-            // Vérifie si la meilleur taille est en KB
+            // Vérifie si la meilleur taille est en Ko
             if (newBytes > 1024 && newBytes < 1048576)
             {
                 newBytes /= 1024;
@@ -97,13 +135,13 @@ namespace EasyProUpdate
             }
             else if (newBytes > 1048576 && newBytes < 1073741824)
             {
-                // Vérifie si la meilleur taille est en MB
+                // Vérifie si la meilleur taille est en Mo
                 newBytes /= 1048576;
                 byteType = "Mo";
             }
             else
             {
-                // Meilleur taille en GB
+                // Meilleur taille en Go
                 newBytes /= 1073741824;
                 byteType = "Go";
             }
@@ -138,20 +176,49 @@ namespace EasyProUpdate
                 try
                 {
                     var processStartInfo = new ProcessStartInfo { FileName = _tempPath, UseShellExecute = true };
-                    if (Path.GetExtension(_tempPath) != ".msi")
+
+                    string fileExtract = Path.GetExtension(_tempPath);
+                    string fileMsi = Path.GetExtension(_tempPath);
+                    string fileExe = Path.GetExtension(_tempPath);
+
+                    if (fileExtract == ".zip" || fileExtract == ".gz" || fileExtract == ".rar" || fileExtract == ".tar")
+                    {
+                        using (ZipArchive archive = ZipFile.OpenRead(_tempPath))
+                        {
+                            foreach (ZipArchiveEntry entry in archive.Entries)
+                            {
+                                if (entry.FullName.EndsWith(".exe", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    string path = Path.Combine(Path.GetTempPath(), entry.FullName);
+                                    entry.ExtractToFile(path);
+                                    processStartInfo.WorkingDirectory = Environment.CurrentDirectory;
+                                    processStartInfo.Verb = "runas";
+                                    Process.Start(path);
+                                }
+                                else if (entry.FullName.EndsWith(".msi", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    string path = Path.Combine(Path.GetTempPath(), entry.FullName);
+                                    entry.ExtractToFile(path);
+                                    Process.Start(path);
+                                }
+                            }
+                        }
+                    }
+                    else if (fileMsi == ".msi")
+                        Process.Start(processStartInfo);
+
+                    else if (fileExe == ".exe")
                     {
                         processStartInfo.WorkingDirectory = Environment.CurrentDirectory;
                         processStartInfo.Verb = "runas";
+                        Process.Start(processStartInfo);
                     }
-                    Process.Start(processStartInfo);
+
                     if (EPUpdate.IsWinFormsApplication)
-                    {
                         Application.Exit();
-                    }
                     else
-                    {
                         Environment.Exit(0);
-                    }
+
                 }
                 catch (Exception ex)
                 {
@@ -190,18 +257,17 @@ namespace EasyProUpdate
                 {
                     const string lookForFileName = "filename=";
                     var index = contentDisposition.IndexOf(lookForFileName, StringComparison.CurrentCultureIgnoreCase);
+
                     if (index >= 0)
                         fileName = contentDisposition.Substring(index + lookForFileName.Length);
+
                     if (fileName.StartsWith("\"") && fileName.EndsWith("\""))
-                    {
                         fileName = fileName.Substring(1, fileName.Length - 2);
-                    }
                 }
             }
             if (string.IsNullOrEmpty(fileName))
             {
                 var uri = new Uri(url);
-
                 fileName = Path.GetFileName(uri.LocalPath);
             }
             return fileName;
